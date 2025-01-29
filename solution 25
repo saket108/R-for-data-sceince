@@ -1,0 +1,13 @@
+#25. Conditional Vector Transformation:
+Convert the vector c(3,1,2,3,1,2,3,1,2) into a vector of only 2s, using a vector of length 2. Which
+vectorized operations in R would facilitate this conversion?
+
+
+> ori<-c(3,1,2,3,1,2,3,1,2)
+> 
+> replacing<-c(2)
+> 
+
+> new_vec<-replacing[1]+ori*0
+> new_vec
+[1] 2 2 2 2 2 2 2 2 2
