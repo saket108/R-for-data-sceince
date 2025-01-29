@@ -1,0 +1,21 @@
+#11. Use the colon operator as an index vector to reverse the order of (10.), and confirm this is
+identical to using sort on (10.) with decreasing=TRUE.
+
+
+
+
+
+reconstructed_vector <- c(3.0, 3.75, 4.5, 5.25, 6.0, 2.0, -5.1, -33.0, 2.0, -5.1, -33.0, 2.166667)
+
+
+reversed_with_colon <- reconstructed_vector[length(reconstructed_vector):1]
+
+
+reversed_with_sort <- sort(reconstructed_vector, decreasing = TRUE)
+
+
+print(reversed_with_colon)
+print(reversed_with_sort)
+
+
+identical(reversed_with_colon, reversed_with_sort)
