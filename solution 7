@@ -1,0 +1,16 @@
+7. Extract the first and last elements of your vector from (6.), storing them as a new object.
+
+
+
+> vector_6 <- c(seq(3, 6, length.out = 5), rep(c(2, -5.1, -33), 2), 7/42 + 2)
+> 
+> vector_6
+ [1]   3.000000   3.750000   4.500000
+ [4]   5.250000   6.000000   2.000000
+ [7]  -5.100000 -33.000000   2.000000
+[10]  -5.100000 -33.000000   2.166667
+
+
+> first_last_elements <- c(vector_6[1], vector_6[length(vector_6)])
+> first_last_elements
+[1] 3.000000 2.166667
