@@ -1,0 +1,4 @@
+#9. Use only (7.) and (8.) to reconstruct (6.).
+
+> reconstruct<-c(first_last[1],mid_values,first_last[2])
+> reconstruct
