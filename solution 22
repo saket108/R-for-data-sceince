@@ -1,0 +1,22 @@
+#22. Diverse Vector Composition:
+Detail the steps to compile a vector containing, in order:
+i. A sequence of length 7 from 2 to 8 (inclusive)
+ii. A threefold repetition of the vector c(3,-4.2,-50)
+iii. The value 14/84 + 3
+How do you maintain the specified order while combining these elements?
+
+
+
+
+> e1<-seq(from=2,to=8,length.out=7)
+> e2<-rep(c(3,-4.2,-50),times=3)
+> e3<-14/84+3
+> 
+> final<-c(e1,e2,e3)
+> final
+ [1]   2.000000   3.000000   4.000000
+ [4]   5.000000   6.000000   7.000000
+ [7]   8.000000   3.000000  -4.200000
+[10] -50.000000   3.000000  -4.200000
+[13] -50.000000   3.000000  -4.200000
+[16] -50.000000   3.166667
