@@ -1,0 +1,12 @@
+#14. Convert the vector c(2,0.5,1,2,0.5,1,2,0.5,1) to a vector of only 1s, using a vector of length 3.
+
+> vec<-c(2,0.5,1)
+> given_vec<-rep(vec,times=3)
+> vec[1]<-1
+> vec[2]<-1
+> result<-rep(vec,times=3)
+> given_vec
+[1] 2.0 0.5 1.0 2.0 0.5 1.0 2.0
+[8] 0.5 1.0
+> result
+[1] 1 1 1 1 1 1 1 1 1
