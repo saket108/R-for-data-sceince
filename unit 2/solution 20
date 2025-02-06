@@ -1,0 +1,27 @@
+#20. Replace the elements at positions (2,1), (2,3), (5,1), and (5,3) in the matrix from question (17.)
+with the average of the four corner elements of that matrix.
+
+
+
+> sorted_matrix
+     [,1] [,2] [,3]
+[1,]    5   10   15
+[2,]    4    9   14
+[3,]    3    8   13
+[4,]    2    7   12
+[5,]    1    6   11
+> 
+> 
+> corner_elements<-c(sorted_matrix[1,1],sorted_matrix[1,ncol(sorted_matrix)],sorted_matrix[nrow(sorted_matrix),1],sorted_matrix[nrow(sorted_matrix),ncol(sorted_matrix)])
+> avg<-mean(corner_elements)
+> sorted_matrix[2,1]<-avg
+> sorted_matrix[2,3]<-avg
+> sorted_matrix[5,1]<-avg
+> sorted_matrix[5,3]<-avg
+> sorted_matrix
+     [,1] [,2] [,3]
+[1,]    5   10   15
+[2,]    8    9    8
+[3,]    3    8   13
+[4,]    2    7   12
+[5,]    8    6    8
