@@ -1,0 +1,19 @@
+#19. From the matrix in question (17.), create a new 2 x 2 matrix using the top four elements of the
+last column.
+
+> sorted_matrix
+     [,1] [,2] [,3]
+[1,]    5   10   15
+[2,]    4    9   14
+[3,]    3    8   13
+[4,]    2    7   12
+[5,]    1    6   11
+> 
+
+> last_column<-sorted_matrix[,3]
+> top_four_elements<-last_column[1:4]
+> new_matrix<-matrix(top_four_elements,nrow=2,ncol=2)
+> new_matrix
+     [,1] [,2]
+[1,]   15   13
+[2,]   14   12
