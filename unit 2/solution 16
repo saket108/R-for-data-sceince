@@ -1,0 +1,25 @@
+#16. If you add a new row to the matrix created in question (15.), confirm its new dimensions.
+
+
+> mat<-matrix(1:15,nrow=5,ncol=3)
+> mat
+     [,1] [,2] [,3]
+[1,]    1    6   11
+[2,]    2    7   12
+[3,]    3    8   13
+[4,]    4    9   14
+[5,]    5   10   15
+> 
+> 
+> new_row<-c(16,17,18)
+> mat<-rbind(mat,new_row)
+> mat
+        [,1] [,2] [,3]
+           1    6   11
+           2    7   12
+           3    8   13
+           4    9   14
+           5   10   15
+new_row   16   17   18
+> dim(mat)
+[1] 6 3
