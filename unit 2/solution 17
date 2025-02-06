@@ -1,0 +1,23 @@
+#17. Sort the first column of the matrix from question (15.) in descending order. Keep other columns
+unchanged.
+
+
+>  mat<-matrix(1:15,nrow=5,ncol=3)
+>  mat
+     [,1] [,2] [,3]
+[1,]    1    6   11
+[2,]    2    7   12
+[3,]    3    8   13
+[4,]    4    9   14
+[5,]    5   10   15
+> 
+> 
+> sorted_indices<-order(mat[,1],decreasing=TRUE)
+> sorted_matrix<-mat[sorted_indices,]
+> sorted_matrix
+     [,1] [,2] [,3]
+[1,]    5   10   15
+[2,]    4    9   14
+[3,]    3    8   13
+[4,]    2    7   12
+[5,]    1    6   11
