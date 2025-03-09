@@ -1,0 +1,9 @@
+9. Write R code that concatenates the strings "Data", "Science", and "R" into a single string with hyphens (-) as
+separators.
+
+
+
+
+
+concatenated_string <- paste("Data", "Science", "R", sep = "-")
+print(concatenated_string)
