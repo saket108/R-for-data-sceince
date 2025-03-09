@@ -1,0 +1,21 @@
+19. Compare two strings alphabetically using relational operators.
+
+
+
+
+# Define two strings
+string1 <- "apple"
+string2 <- "Banana"
+
+# Comparing strings alphabetically using relational operators
+is_less_than <- string1 < string2
+is_equal <- string1 == string2
+
+# Print results
+print(is_less_than)  # TRUE because "apple" comes before "Banana" alphabetically
+print(is_equal)  # FALSE because the strings are different
+
+# Explanation:
+# R compares strings based on their ASCII values. 
+# In ASCII, lowercase letters come after uppercase ones, so "apple" is considered smaller than "Banana".
+# This is why "apple" < "Banana" returns TRUE.
