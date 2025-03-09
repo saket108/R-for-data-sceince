@@ -1,0 +1,16 @@
+20. Create a string containing a newline, tab, and backslash using escape sequences and print with cat().
+
+
+
+
+
+# Create a string using escape sequences for newline, tab, and backslash
+escaped_string <- "This is a line.\n\tThis is indented.\nThis is a backslash: \\"
+
+# Print the string using cat() to show the formatting
+cat(escaped_string)
+
+# Explanation:
+# \n represents a newline character, which starts a new line.
+# \t represents a tab, which adds an indentation.
+# \\ represents a literal backslash (escaping the backslash).
