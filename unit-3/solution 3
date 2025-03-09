@@ -1,0 +1,8 @@
+3. Given two numeric vectors of equal length, write R code to check if they are element-wise equal and then output
+the indices where they differ using the which() function.
+
+
+vector1 <- c(1, 2, 3, 4)
+vector2 <- c(1, 2, 0, 4)
+differing_indices <- which(vector1 != vector2)
+print(differing_indices)
