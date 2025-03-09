@@ -1,0 +1,7 @@
+7. Given a numeric vector, write R code to extract all elements that are greater than 10 using logical subsetting.
+
+
+
+numeric_vector <- c(5, 12, 18, 7, 3, 15)
+greater_than_10 <- numeric_vector[numeric_vector > 10]
+print(greater_than_10)
