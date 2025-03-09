@@ -1,0 +1,10 @@
+11. Given the string "apple, apple, and apple", write R code that uses sub() to replace only the first occurrence of
+"apple" with "orange", and gsub() to replace all occurrences.
+
+
+
+string <- "apple, apple, and apple"
+sub_result <- sub("apple", "orange", string)
+gsub_result <- gsub("apple", "orange", string)
+print(sub_result)
+print(gsub_result)
