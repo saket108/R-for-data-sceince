@@ -1,0 +1,7 @@
+Create a factor from the vector c("Jan", "Mar", "Feb", "Apr", "May", "Dec", "Nov") and order it to reflect the natural calendar order.
+
+
+
+months <- c("Jan", "Mar", "Feb", "Apr", "May", "Dec", "Nov")
+month_factor <- factor(months, levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"), ordered = TRUE)
+print(month_factor)
