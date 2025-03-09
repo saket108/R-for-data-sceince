@@ -1,0 +1,14 @@
+15. Write a function that takes a numeric vector and bins the data into three categories: "Low", "Medium", and "High" using the cut() function.
+
+
+
+
+
+bin_data <- function(num_vector) {
+  return(cut(num_vector, breaks = c(-Inf, 5, 15, Inf), labels = c("Low", "Medium", "High")))
+}
+
+# Example usage
+numeric_vector <- c(1, 4, 10, 18, 6)
+result <- bin_data(numeric_vector)
+print(result)
