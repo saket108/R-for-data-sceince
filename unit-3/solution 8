@@ -1,0 +1,11 @@
+8. For the string "Hello World! Welcome to R programming", write R code to count the number of characters (using
+nchar()) and extract the substring "R programming".
+
+
+
+
+string <- "Hello World! Welcome to R programming"
+num_chars <- nchar(string)
+substring_result <- substr(string, 21, nchar(string))
+print(num_chars)
+print(substring_result)
