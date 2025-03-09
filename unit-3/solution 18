@@ -1,0 +1,11 @@
+18. Replace values less than the mean of a numeric vector with NA.
+
+# Create a numeric vector
+numeric_vector <- c(1, 5, 3, 7, 9)
+
+# Calculate the mean of the vector
+mean_value <- mean(numeric_vector)
+
+# Replace values less than the mean with NA
+new_vector <- ifelse(numeric_vector < mean_value, NA, numeric_vector)
+print(new_vector)  # Values less than the mean are replaced with NA
