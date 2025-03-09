@@ -1,0 +1,19 @@
+17. Perform element-wise logical AND, OR, and NOT operations on two logical vectors.
+
+
+
+# Create two logical vectors
+logical_vector1 <- c(TRUE, FALSE, TRUE, FALSE)
+logical_vector2 <- c(TRUE, TRUE, FALSE, FALSE)
+
+# Element-wise logical AND operation
+and_result <- logical_vector1 & logical_vector2
+print(and_result)  # Performs AND operation element-wise
+
+# Element-wise logical OR operation
+or_result <- logical_vector1 | logical_vector2
+print(or_result)  # Performs OR operation element-wise
+
+# Element-wise logical NOT operation on the first vector
+not_result <- !logical_vector1
+print(not_result)  # Performs NOT operation on each element of the first vector
