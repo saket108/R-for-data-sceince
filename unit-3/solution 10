@@ -1,0 +1,11 @@
+10. Write an R script that demonstrates the difference between cat() and paste() by printing the same set of words
+using both functions with a custom separator.
+
+
+
+
+cat_result <- cat("Data", "Science", "R", sep = "-")
+cat("\n")  # Add a newline to separate the outputs
+paste_result <- paste("Data", "Science", "R", sep = "-")
+print(paste_result)
+
